@@ -1,33 +1,37 @@
-import React from "react";
-import "../Styles/Navbar.css"
-
+import React from 'react'
+import '../Styles/Navbar.css';
+//import { Link } from'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar">
-        <div className="navbar-container container">
-          {/* Hamburger menu checkbox */}
-          <input type="checkbox" id="toggle-menu" aria-label="Toggle navigation" />
-          <div className="hamburger-lines">
-            <span className="line line1"></span>
-            <span className="line line2"></span>
-            <span className="line line3"></span>
-          </div>
-          {/* Navigation menu */}
-          <ul className="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Parking Space</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="#">Wallet</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          {/* Logo */}
-          <h1 className="logo">Navbar</h1>
+      <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">YourLogo</a>
         </div>
-      </nav>
+        <div class="main_list" id="mainListDiv">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">P-Space</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="media_button">
+            <button class="main_media_button" id="mediaButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
-  );
-};
+</nav>
+    
+<section class="home"></section>
+    </div>
+  )
+}
 
 export default Navbar;
